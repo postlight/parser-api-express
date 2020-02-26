@@ -4,7 +4,7 @@ const Mercury = require('@postlight/mercury-parser');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Welcome to Mercury Parser' });
+  res.send({ title: 'Welcome to Mercury Parser API' });
 });
 
 router.get('/parse', async (req, res, next) => {
